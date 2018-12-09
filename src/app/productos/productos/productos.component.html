@@ -1,0 +1,54 @@
+<h3>Cesta</h3>
+<table class="table table-bordered table-striped tabla" style="margin-top: 40px;">
+  <thead>
+    <tr class="filters">
+      <th>Nombre</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <td>{{producto.nombre}}</td>
+      <td>{{producto.precio}}</td>
+    </tr>
+  </thead>  
+</table>
+<!-- Botón en HTML (lanza el modal) -->
+<button type="submit" href="#ModalAceptar" role="button" class="btn btn-large btn-primary" data-toggle="modal" style='width:150px; height:50px'>Realizar compra</button>
+  
+<!-- Modal / Ventana / Overlay en HTML -->
+<div id="ModalAceptar" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>¡Compra realizada!</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" routerLink="/">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Botón en HTML (lanza el modal en Bootstrap) -->
+<button type="submit" href="#ModalCancelar" role="button" class="btn btn-danger btn-block" data-toggle="modal" style='width:150px; height:50px'>Cancelar compra</button>
+  
+<!-- Modal / Ventana / Overlay en HTML -->
+<div id="ModalCancelar" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>Compra cancelada</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" routerLink="/">Aceptar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

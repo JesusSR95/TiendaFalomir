@@ -1,0 +1,16 @@
+<h2>Lo más destacado</h2>
+<hr>
+<div class="contenedor">
+    <div class="row">
+        <div class="col-md-4 col-sm-6" *ngFor="let prod of misproductos$ | async">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" id="img" src={{prod.url1}} alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{prod.nombre}}</h5>
+                    <p class="card-text">{{prod.precio}}€</p>
+                    <a href="#" class="btn btn-primary" routerLink="/producto/{{prod.id}}">Ir al producto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
